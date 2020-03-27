@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Assignment 05 - DOM Practice</title>
+    <script>
+      window.addEventListener("load", function() {
+        let elem5 = window.document.getElementById("step5");
+        elem5.addEventListener("click", () => {
+          "use strict";
+          window.alert("I have been clicked");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Assignment 6</h1>
+    <h2>Practice Section</h2>
+
+    <button onclick="step1();">Step 1</button><br />
+
+    <button id="step2">Step 2</button><br />
+
+    <button id="step3">Step 3</button><br />
+
+    <button id="step4">Step 4</button><br />
+
+    <button id="step5">Step 5</button><br />
+
+    <a href="http://www.google.com" id="redirect">Visit Google</a><br />
+
+    <input type="text" id="txtBox" /><br />
+    <button id="step7">Step 7</button><br />
+
+    <button id="step8">Step 8</button><br />
+
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button><br />
+
+    <label for="listItems">Choose your vacation destination:</label><br />
+    <select id="listItems">
+      <option value="1">Paris</option>
+      <option value="2">New York City</option>
+      <option value="3">Hawaii</option>
+      <option value="4">Rome</option> </select
+    ><button id="step10">Select</button>
+
     <script src="js/dom-practice.js"></script>
-</head>
-<body>
-    
-</body>
+  </body>
 </html>
