@@ -47,6 +47,7 @@ function updateList(employees) {
 }
 
 function checkInputs() {
+  "use strict";
   let updateOk = true;
   let name = $("frmName").value;
   let title = $("frmTitle").value;
@@ -72,6 +73,7 @@ function checkInputs() {
 }
 
 function addList(employees) {
+  "use strict";
   employees.push([
     $("frmName").value,
     $("frmTitle").value,
@@ -84,6 +86,7 @@ function addList(employees) {
 }
 
 function addButton(employees) {
+  "use strict";
   let updateOK = checkInputs();
   if (updateOK) {
     addList(employees);
@@ -92,6 +95,7 @@ function addButton(employees) {
 }
 
 function deleteList(employees, event) {
+  "use strict";
   let btnId = event.target.id;
   let pos = Number(btnId.substring(6, btnId.length));
   employees.splice(pos, 1);
@@ -99,6 +103,7 @@ function deleteList(employees, event) {
 }
 
 window.addEventListener("load", () => {
+  "use strict";
   let employees = [];
   loadEmployees(employees);
   updateList(employees);

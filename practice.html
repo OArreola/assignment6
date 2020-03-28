@@ -2,7 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Assignment 05 - DOM Practice</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,900,100"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/practice_styles.css" />
     <script>
       window.addEventListener("load", function() {
         let elem5 = window.document.getElementById("step5");
@@ -14,37 +25,74 @@
     </script>
   </head>
   <body>
-    <h1>Assignment 6</h1>
-    <h2>Practice Section</h2>
+    <main class="container">
+      <h1>Assignment 6</h1>
+      <h2>Practice Section</h2>
 
-    <button onclick="step1();">Step 1</button><br />
+      <section class="row">
+        <section class="six columns">
+          <fieldset>
+            <legend>Step 1</legend>
+            <button onclick="step1();">Click Me!</button>
+          </fieldset>
 
-    <button id="step2">Step 2</button><br />
+          <fieldset>
+            <legend>Step 2</legend>
+            <button id="step2">Click Me!</button>
+          </fieldset>
 
-    <button id="step3">Step 3</button><br />
+          <fieldset>
+            <legend>Step 3</legend>
+            <button id="step3">Click Me!</button>
+          </fieldset>
 
-    <button id="step4">Step 4</button><br />
+          <fieldset>
+            <legend>Step 4</legend>
+            <button id="step4">Click Me!</button>
+          </fieldset>
 
-    <button id="step5">Step 5</button><br />
+          <fieldset>
+            <legend>Step 5</legend>
+            <button id="step5">Click Me!</button>
+          </fieldset>
+        </section>
 
-    <a href="http://www.google.com" id="redirect">Visit Google</a><br />
+        <section class="six columns">
+          <fieldset>
+            <legend>Step 6</legend>
+            <a href="http://www.google.com" id="redirect">Visit Google</a>
+          </fieldset>
 
-    <input type="text" id="txtBox" /><br />
-    <button id="step7">Step 7</button><br />
+          <fieldset>
+            <legend>Step 7</legend>
+            <input type="text" id="txtBox" /><br />
+            <button id="step7">Click Me!</button>
+          </fieldset>
 
-    <button id="step8">Step 8</button><br />
+          <fieldset>
+            <legend>Step 8</legend>
+            <button id="step8">Click Me!</button>
+          </fieldset>
 
-    <button id="btnStart">Start</button>
-    <button id="btnStop">Stop</button><br />
+          <fieldset>
+            <legend>Step 9</legend>
+            <button id="btnStart">Start</button>
+            <button id="btnStop">Stop</button>
+          </fieldset>
 
-    <label for="listItems">Choose your vacation destination:</label><br />
-    <select id="listItems">
-      <option value="1">Paris</option>
-      <option value="2">New York City</option>
-      <option value="3">Hawaii</option>
-      <option value="4">Rome</option> </select
-    ><button id="step10">Select</button>
-
+          <fieldset>
+            <legend>Step 10</legend>
+            <label for="listItems">Choose your vacation destination:</label>
+            <select id="listItems">
+              <option value="1">Paris</option>
+              <option value="2">New York City</option>
+              <option value="3">Hawaii</option>
+              <option value="4">Rome</option> </select
+            ><button id="step10">Select</button>
+          </fieldset>
+        </section>
+      </section>
+    </main>
     <script src="js/dom-practice.js"></script>
   </body>
 </html>

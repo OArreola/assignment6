@@ -1,0 +1,46 @@
+/* BASIC STYLES */
+body {
+  background: url("../images/bg_e6f1f2.png") #fff;
+}
+
+fieldset {
+  border: 1px solid darkgrey;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  padding: 0 10px 0 10px;
+}
+
+legend {
+  padding: 0 10px 0 10px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+button {
+  background-color: #fff;
+  border: 2px solid gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+button:disabled {
+  background-color: lightgray;
+  border: 1px solid lightgray;
+}
+
+input,
+select,
+button,
+a {
+  margin-left: 10px;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: black;
+}
